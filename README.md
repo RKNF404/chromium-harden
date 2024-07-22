@@ -47,30 +47,8 @@ I do not intend to whitelist more extension at this time. The only extension I a
 ### Q: What versions/variations of chromium are supported?
 Just vanilla Chromium on Linux (mainly Fedora). I don't currently, or ever intend to, support any other platforms or other browsers like Brave, Edge, Vivaldi, Opera, Ungoogled-Chromium, etc. Not every distro is supported but many distros support some form of persistent flags features. [Fedora](https://fedoraproject.org/) I support directly because it is popular and what I personally use. Other distros that I know can persist flags are [Arch](https://archlinux.org/), [NixOS](https://nixos.org/), [Chimera Linux](https://chimera-linux.org/), [Debian](https://www.debian.org/), [Ubuntu](https://ubuntu.com/), [Gentoo](https://www.gentoo.org/), and likely many others.
 
-### Q: Other platforms?
-Unlikely, I was considering doing something for Windows, but Windows doesn't have a decent way to enable persistent flags. The ONLY way I could find is using [chrlauncher](https://github.com/henrypp/chrlauncher), which isn't exactly stable software. The latest version of chrlauncher has a bug where the number of flags you can add is substantially limited, same version since 2022. I also don't want to mess with people's registry, I hate dealing with it and don't intend to distribute reg files. I don't know of any other platform with as trivial a policy and flags setup system as Linux, Android has flags stuff but not really, similar thing for ChromeOS.
-
-### Q: Is this arkenfox-user.js but for Chromium?
-... *sigh* Sure, whatever. In concept, it is similar. I know someone is just going to call it that, I put this question here just because.
-
 ### Q: Why did you make this?
 Because Firefox security is sub-par compared to chromium, plus my own user.js was very big and very hard to maintain. Even using a basis of [arkenfox](https://github.com/arkenfox/user.js), because I like to make my own changes and don't agree with all the changes made, it was just very annoying. Maintaining this is way easier than a user.js with way more benefit. Another reason is because there wasn't anything similar to [arkenfox](https://github.com/arkenfox/user.js) for chromium, the closest things are a dead project similar to this one called [ChromiumHardening](https://github.com/melo936/ChromiumHardening) and [Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium) (which has a lot of flaws).
 
-### Q: Where do you get flags & policies?
-See sources section, yes I look through each of those in their entirety and check the status of already applied flags, also some other projects with similar objectives to my own. [Vanadium](https://github.com/GrapheneOS/Vanadium), any possible changes there are made here (for example enabling a flag or policy to do something they do). The original ChromiumHardening project, now archived, gave a strong basis to work off of and I am thankful I didn't need to find all these flags manually. For some policies DivestedCG's [Brace](https://gitlab.com/divested/brace) gave some inspiration, but most of the policy work was manually done, since Brace is kind of out-of-date with its policies.
-
 ### Q: I want to add something!
 A: Great, submit a PR or an issue, I'll get to it... eventually... maybe. Or don't, up to you really.
-
-## Sources
-
-- https://source.chromium.org/
-- https://source.chromium.org/chromium/chromium/src/+/main:net/base/features.cc;l=1
-- https://source.chromium.org/chromium/chromium/src/+/main:content/public/common/content_features.cc;l=1
-- https://source.chromium.org/chromium/chromium/src/+/main:services/network/public/cpp/features.cc;l=1
-- https://source.chromium.org/chromium/chromium/src/+/main:chrome/common/chrome_features.cc;l=1
-- https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/common/features.cc?l=1
-- https://source.chromium.org/chromium/chromium/src/+/main:components/content_settings/core/common/features.cc?l=1
-- https://source.chromium.org/chromium/chromium/src/+/main:sandbox/policy/features.cc?l=1
-- https://chromeenterprise.google/policies/
-- https://peter.sh/experiments/chromium-command-line-switches
