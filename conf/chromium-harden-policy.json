@@ -1,5 +1,5 @@
 {
-	"VERSION": 126,
+	"VERSION": 127,
 	"POLICY_COMMENTS": [
 		"AlternateErrorPagesEnabled (privacy) - disables alternate error pages",
 		"AudioSandboxEnabled (security) - enables sandboxing of the audio process",

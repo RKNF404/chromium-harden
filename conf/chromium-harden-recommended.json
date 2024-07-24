@@ -1,5 +1,5 @@
 {
-	"VERSION_RECOMMEND": 126,
+	"VERSION_RECOMMEND": 127,
 	"POLICY_COMMENTS_RECOMMEND": [
 		"AutofillAddressEnabled (security) - disables address autofill",
 		"AutofillCreditCardEnabled (security) - disables credit card autofill",
