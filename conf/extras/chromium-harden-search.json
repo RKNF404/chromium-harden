@@ -2,6 +2,7 @@
 	"POLICY_COMMENTS_SEARCH": [
 		"The way it works is pretty simple, when you search it will generate a defined list of instances, it will then generate a random number to select a random element from that list of instances, from there it will inject a hidden HTML form for the selected instance using POST and the search term entered, it will then submit the form which redirects you to the search results page on the instance. This all happens without any party between you and the engine, purely local.",
 		"Note: THIS WILL PREVENT YOU FROM USING ANY OTHER SEARCH ENGINES AS YOUR DEFAULT! Also, search suggestions are impossible so they are just disabled.",
+		"SECURITY NOTICE: It may be possible to craft a malicious search query that can lead to arbitrary script execution. This is highly unlikely to be an issue but worth the note if you are potentially targeted.",
 	],
 	
 	"DefaultSearchProviderEnabled": true,
