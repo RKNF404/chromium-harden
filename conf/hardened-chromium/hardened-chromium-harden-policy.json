@@ -1,11 +1,12 @@
 {
+	"VERSION": 127,
+	"POLICY_COMMENTS": [
+		"These are policies that are either customization focused (such as HistoryClustersVisible, BrowserLabsEnabled, and DesktopSharingHubEnabled) or highly personalized (such as ExtensionSettings, NativeMessagingBlocklist, ClearBrowsingDataOnExitList, and NewTabPageLocation). Some of these may be proposed (such as PrivateNetworkAccessRestrictionsEnabled, CreateThemesSettings, DevToolsGenAiSettings, and TabOrganizerSettings) and some are currently in the works (such as HelpMeWriteSettings).",
+	],
+	
 	"BrowserLabsEnabled": false,
-	"BrowserSignin": 0,
-	"ChromeForTestingAllowed": false,
 	"ClearBrowsingDataOnExitList": ["download_history","cached_images_and_files","autofill","hosted_app_data"],
 	"CreateThemesSettings": 2,
-	"DefaultBrowserSettingEnabled": false,
-	"DefaultDirectSocketsSetting": 2,
 	"DesktopSharingHubEnabled": false,
 	"DevToolsGenAiSettings": 2,
 	"ExtensionSettings": {"*":{"allowed_types": ["extension"],"blocked_install_message": "Chromium Harden doesn't allow extensions","installation_mode": "blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh": {"installation_mode": "allowed",}},
@@ -15,9 +16,6 @@
 	"NativeMessagingBlocklist": ["*"],
 	"NewTabPageLocation": "about:blank",
 	"PrivateNetworkAccessRestrictionsEnabled": true,
-	"SafeBrowsingDeepScanningEnabled": false,
-	"SafeBrowsingProxiedRealTimeChecksAllowed": false,
-	"SafeBrowsingSurveysEnabled": false,
 	"ShoppingListEnabled": false,
 	"TabOrganizerSettings": 2,
 }
