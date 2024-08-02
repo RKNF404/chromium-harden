@@ -7,5 +7,5 @@
 	
 	"DefaultSearchProviderEnabled": true,
 	"DefaultSearchProviderName": "Chromium Harden Default (SearXNG Randomizer)",
-	"DefaultSearchProviderSearchURL": "data:text/html,<script>const instances = ['gruble.de', 'search.mdosch.de', 'searx.ox2.fr', 'searx.tuxcloud.net', 'searxng.shreven.org', 'search.privacyredirect.com', 'search.im-in.space'];const rand = Math.floor((instances.length)*self.crypto.getRandomValues(new Uint32Array(1))[0]/2**32|0);document.write(`<form name='f' action='https://${instances[rand]}' method='POST'><input type='hidden' name='q' value='{searchTerms}'></form>`);f.submit();</script>",
+	"DefaultSearchProviderSearchURL": "data:text/html,<script>const instances = ['gruble.de', 'search.mdosch.de', 'searx.ox2.fr', 'searx.tuxcloud.net', 'searxng.shreven.org', 'search.privacyredirect.com', 'searx.foss.family', 'paulgo.io', 'priv.au', 'search.tommy-tran.com', 'searx.namejeff.xyz'];const rand = Math.floor((instances.length)*self.crypto.getRandomValues(new Uint32Array(1))[0]/2**32|0);document.write(`<form name='f' action='https://${instances[rand]}' method='POST'><input type='hidden' name='q' value='{searchTerms}'></form>`);f.submit();</script>",
 }
