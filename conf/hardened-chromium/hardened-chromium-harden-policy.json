@@ -1,21 +1,21 @@
 {
 	"VERSION": 127,
-	"POLICY_COMMENTS": [
-		"These are policies that are either customization focused (such as HistoryClustersVisible, BrowserLabsEnabled, and DesktopSharingHubEnabled) or highly personalized (such as ExtensionSettings, NativeMessagingBlocklist, ClearBrowsingDataOnExitList, and NewTabPageLocation). Some of these may be proposed (such as PrivateNetworkAccessRestrictionsEnabled, CreateThemesSettings, DevToolsGenAiSettings, and TabOrganizerSettings) and some are currently in the works (such as HelpMeWriteSettings).",
-	],
 	
 	"BrowserLabsEnabled": false,
-	"ClearBrowsingDataOnExitList": ["download_history","cached_images_and_files","autofill","hosted_app_data"],
-	"CreateThemesSettings": 2,
 	"DesktopSharingHubEnabled": false,
+	"HistoryClustersVisible": false,
+	
+	"CreateThemesSettings": 2,
 	"DevToolsGenAiSettings": 2,
-	"ExtensionSettings": {"*":{"allowed_types": ["extension"],"blocked_install_message": "Chromium Harden doesn't allow extensions","installation_mode": "blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh": {"installation_mode": "allowed",}},
 	"GoogleSearchSidePanelEnabled": false,
 	"HelpMeWriteSettings": 2,
-	"HistoryClustersVisible": false,
-	"NativeMessagingBlocklist": ["*"],
-	"NewTabPageLocation": "about:blank",
+	"TabOrganizerSettings": 2,
+	
 	"PrivateNetworkAccessRestrictionsEnabled": true,
 	"ShoppingListEnabled": false,
-	"TabOrganizerSettings": 2,
+	
+	"ClearBrowsingDataOnExitList": ["download_history","cached_images_and_files","autofill","hosted_app_data"],
+	"ExtensionSettings": {"*":{"allowed_types": ["extension"],"blocked_install_message": "Chromium Harden doesn't allow extensions","installation_mode": "blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh": {"installation_mode": "allowed",}},
+	"NativeMessagingBlocklist": ["*"],
+	"NewTabPageLocation": "about:blank",
 }
