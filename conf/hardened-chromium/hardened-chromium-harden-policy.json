@@ -5,17 +5,10 @@
 	"DesktopSharingHubEnabled": false,
 	"HistoryClustersVisible": false,
 	
-	"CreateThemesSettings": 2,
-	"DevToolsGenAiSettings": 2,
-	"GoogleSearchSidePanelEnabled": false,
-	"HelpMeWriteSettings": 2,
-	"TabOrganizerSettings": 2,
-	
 	"PrivateNetworkAccessRestrictionsEnabled": true,
 	"ShoppingListEnabled": false,
 	
-	"ClearBrowsingDataOnExitList": ["download_history","cached_images_and_files","autofill","hosted_app_data"],
 	"ExtensionSettings": {"*":{"allowed_types": ["extension"],"blocked_install_message": "Chromium Harden doesn't allow extensions","installation_mode": "blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh": {"installation_mode": "allowed",}},
 	"NativeMessagingBlocklist": ["*"],
-	"NewTabPageLocation": "about:blank",
+	"NewTabPageLocation": "data:text/html,<body style=background-color:black;><iframe frameborder=0 width=100% height=100% credentialless allow sandbox csp=%22default-src;style-src data: 'unsafe-inline';base-uri;form-action;upgrade-insecure-requests%22 referrerpolicy=no-referrer src=%22data:text/html,<div align=center style=color:Snow;padding-top:10%;font-size:300%>Welcome to hardened-chromium</div>%22></iframe></body>",
 }
