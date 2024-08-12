@@ -1,14 +1,10 @@
 {
 	"VERSION": 127,
 	
-	"BrowserLabsEnabled": false,
-	"DesktopSharingHubEnabled": false,
-	"HistoryClustersVisible": false,
-	
 	"PrivateNetworkAccessRestrictionsEnabled": true,
 	"ShoppingListEnabled": false,
 	
 	"ExtensionSettings": {"*":{"allowed_types": ["extension"],"blocked_install_message": "Chromium Harden doesn't allow extensions","installation_mode": "blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh": {"installation_mode": "allowed",}},
 	"NativeMessagingBlocklist": ["*"],
-	"NewTabPageLocation": "data:text/html,<body style=background-color:3c3c3c;><iframe frameborder=0 width=100% height=100% credentialless allow sandbox csp=%22default-src;style-src 'self' 'unsafe-inline';base-uri;form-action;upgrade-insecure-requests;require-trusted-types-for 'script';trusted-types;%22 referrerpolicy=no-referrer src=%22data:text/html,<div align=center style=color:Snow;padding-top:10%;font-size:300%>Welcome to hardened-chromium</div>%22></iframe></body>",
+	"NewTabPageLocation": "file:///etc/chromium/pages/newtab.html",
 }
