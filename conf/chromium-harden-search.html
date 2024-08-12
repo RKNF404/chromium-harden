@@ -29,9 +29,8 @@
     <div id=instance align=center>
     </div>
     <script type=text/javascript>
-      const unsafeQuery = new URLSearchParams(document.location.search).get('q'); // gets the query input (unsafe because it is untrusted input that may be used to execute arbitrary JavaScript)
-      const query = unsafeQuery.replaceAll("'", '"').replaceAll('`', '"') // replace the single quote with a double quote (since it can be used for XSS, and single quote are used everywhere on this page whereas double quotes are not used for handling this input)
-      console.log(query);
+      const query = new URLSearchParams(document.location.search).get('q').replaceAll("'", '"').replaceAll('`', '"'); // gets the query input
+      // replace the single quote with a double quote (since it can be used for XSS, and single quote are used everywhere on this page whereas double quotes are not used for handling this input)
       const instances = ['gruble.de', 'search.mdosch.de', 'searx.ox2.fr', 'searx.tuxcloud.net', 'searxng.shreven.org', 'search.privacyredirect.com', 'searx.foss.family', 'search.tommy-tran.com']; // a few instances that are reliable and I personally trust
       const rand = Math.floor((instances.length)*self.crypto.getRandomValues(new Uint32Array(1))[0]/2**32|0); // cryptographically secure random number from 1 to the size of the list above
       // the next lines display both the query submitted by the user and the instance it will be submitted with
