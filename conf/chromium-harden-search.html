@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
   <head>
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src-elem 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline'; frame-src 'self'; form-action *; base-uri 'none'; upgrade-insecure-requests;">
-    <meta name="referrer" content="no-referrer">
-    <meta charset="utf-8">
+    <meta http-equiv=Content-Security-Policy content="default-src 'none'; script-src-elem 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline'; frame-src 'self'; form-action *; base-uri 'none'; upgrade-insecure-requests;">
+    <meta name=referrer content=no-referrer>
+    <meta charset=utf-8>
     <style>
       body, html {
         background-color: #3c3c3c;
@@ -29,27 +29,29 @@
     <div id=instance align=center>
     </div>
     <script type=text/javascript>
-      const unsafeQuery = new URLSearchParams(document.location.search).get("q"); // gets the query input (unsafe because it is untrusted input that may be used to execute arbitrary JavaScript)
-      const query = unsafeQuery // strip dangerous characters from the search query (notably quotations)
-                      .replaceAll("'", '%27')
-                      .replaceAll('"', '%22')
-                      .replaceAll('`', '%60')
-                      .replaceAll('<', '%3C')
-                      .replaceAll('>', '%3E');
+      const unsafeQuery = new URLSearchParams(document.location.search).get('q'); // gets the query input (unsafe because it is untrusted input that may be used to execute arbitrary JavaScript)
+      const query = unsafeQuery.replaceAll("'", '"').replaceAll('`', '"') // replace the single quote with a double quote (since it can be used for XSS, and single quote are used everywhere on this page whereas double quotes are not used for handling this input)
+      console.log(query);
       const instances = ['gruble.de', 'search.mdosch.de', 'searx.ox2.fr', 'searx.tuxcloud.net', 'searxng.shreven.org', 'search.privacyredirect.com', 'searx.foss.family', 'search.tommy-tran.com']; // a few instances that are reliable and I personally trust
       const rand = Math.floor((instances.length)*self.crypto.getRandomValues(new Uint32Array(1))[0]/2**32|0); // cryptographically secure random number from 1 to the size of the list above
       // the next lines display both the query submitted by the user and the instance it will be submitted with
-      document.getElementById('query').innerHTML="Searching for \"" + query + "\" using:";
-      document.getElementById('instance').innerHTML=instances[rand];
+      document.getElementById('query').innerText='Searching for `' + query + '` using:';
+      document.getElementById('instance').innerText=instances[rand];
     </script>
-    <iframe id=SearchFrame src=about:blank allow="accelerometer 'none'; attribution-reporting 'none'; autoplay 'none'; camera 'none'; ch-device-memory 'none'; ch-downlink 'none'; ch-dpr 'none'; ch-ect 'none'; ch-prefers-color-scheme 'none'; ch-prefers-reduced-motion 'none'; ch-prefers-reduced-transparency 'none'; ch-rtt 'none'; ch-save-data 'none'; ch-ua 'none'; ch-ua-arch 'none'; ch-ua-bitness 'none'; ch-ua-form-factors 'none'; ch-ua-full-version 'none'; ch-ua-full-version-list 'none'; ch-ua-mobile 'none'; ch-ua-model 'none'; ch-ua-platform 'none'; ch-ua-platform-version 'none'; ch-ua-wow64 'none'; ch-viewport-height 'none'; ch-viewport-width 'none'; ch-width 'none'; clipboard-read 'none'; clipboard-write 'none'; compute-pressure 'none'; cross-origin-isolated 'none'; display-capture 'none'; encrypted-media 'none'; fullscreen 'none'; gamepad 'none'; geolocation 'none'; gyroscope 'none'; hid 'none'; identity-credentials-get 'none'; idle-detection 'none'; keyboard-map 'none'; local-fonts 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; otp-credentials 'none'; payment 'none'; picture-in-picture 'none'; private-aggregation 'none'; private-state-token-issuance 'none'; private-state-token-redemption 'none'; publickey-credentials-create 'none'; publickey-credentials-get 'none'; screen-wake-lock 'none'; serial 'none'; shared-storage 'none'; shared-storage-select-url 'none'; storage-access 'none'; sync-xhr 'none'; unload 'none'; usb 'none'; window-management 'none'; xr-spatial-tracking 'none';" sandbox="allow-same-origin allow-top-navigation allow-forms" csp="default-src 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests;" referrerpolicy=no-referrer>
+    <iframe id=SearchFrame allow="accelerometer 'none'; attribution-reporting 'none'; autoplay 'none'; camera 'none'; ch-device-memory 'none'; ch-downlink 'none'; ch-dpr 'none'; ch-ect 'none'; ch-prefers-color-scheme 'none'; ch-prefers-reduced-motion 'none'; ch-prefers-reduced-transparency 'none'; ch-rtt 'none'; ch-save-data 'none'; ch-ua 'none'; ch-ua-arch 'none'; ch-ua-bitness 'none'; ch-ua-form-factors 'none'; ch-ua-full-version 'none'; ch-ua-full-version-list 'none'; ch-ua-mobile 'none'; ch-ua-model 'none'; ch-ua-platform 'none'; ch-ua-platform-version 'none'; ch-ua-wow64 'none'; ch-viewport-height 'none'; ch-viewport-width 'none'; ch-width 'none'; clipboard-read 'none'; clipboard-write 'none'; compute-pressure 'none'; cross-origin-isolated 'none'; display-capture 'none'; encrypted-media 'none'; fullscreen 'none'; gamepad 'none'; geolocation 'none'; gyroscope 'none'; hid 'none'; identity-credentials-get 'none'; idle-detection 'none'; keyboard-map 'none'; local-fonts 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; otp-credentials 'none'; payment 'none'; picture-in-picture 'none'; private-aggregation 'none'; private-state-token-issuance 'none'; private-state-token-redemption 'none'; publickey-credentials-create 'none'; publickey-credentials-get 'none'; screen-wake-lock 'none'; serial 'none'; shared-storage 'none'; shared-storage-select-url 'none'; storage-access 'none'; sync-xhr 'none'; unload 'none'; usb 'none'; window-management 'none'; xr-spatial-tracking 'none';" sandbox="allow-same-origin allow-top-navigation allow-forms" csp="default-src 'none'; base-uri 'none'; form-action 'self'; upgrade-insecure-requests;" referrerpolicy=no-referrer src=about:blank>
     </iframe>
     <script type=text/javascript>
-      const doc = document.getElementById('SearchFrame').contentWindow.document; // locates the frame ID
-      doc.open(); // opens the frame document (allowing the below to happen)
-      doc.write(`<form name=f target=_parent action=https://${instances[rand]} method=POST><input type=hidden name=q value='${query}'></form>`); // writes to the sandboxed frame (better than writing directly to the top document)
-      doc.f.submit(); // submits the form written above in the frame
-      doc.close(); // closes the frame
+      const doc = document.getElementById('SearchFrame').contentDocument; // locate the frame to open it
+      doc.open(); // open frame document for modification
+      const form = doc.createElement('form'); // create a form element in that frame
+      form.name = 'f'; // add name to form (to be able to submit it)
+      form.target = '_parent'; // tell form to redirect top-level document
+      form.action = 'https://' + instances[rand]; // set the url redirect to selected instance
+      form.method = 'POST'; // set the submit method
+      form.innerHTML = `<input type=hidden name=q value='` + query + `'>`; // add the input data (user's query, which should already be sanitized)
+      doc.appendChild(form); // add the form element to the frame
+      doc.f.submit(); // submit the created form (redirect to results page)
+      doc.close(); // closes the frame document
     </script>
   </body>
 </html>
