@@ -31,7 +31,7 @@
     <script type=text/javascript>
       const query = new URLSearchParams(document.location.search).get('q').replaceAll("'", '"').replaceAll('`', '"'); // gets the query input
       // replace the single quote with a double quote (since it can be used for XSS, and single quote are used everywhere on this page whereas double quotes are not used for handling this input)
-      const instances = ['search.mdosch.de', 'searx.ox2.fr', 'searxng.ch', 'gruble.de', 'searxng.shreven.org', 'searx.tuxcloud.net', 'searx.foss.family']; // a few instances that are reliable and I personally trust
+      const instances = ['search.mdosch.de', 'searx.ox2.fr', 'searxng.ch', 'gruble.de', 'searxng.shreven.org', 'searx.tuxcloud.net']; // a few instances that are reliable and I personally trust
       const rand = Math.floor((instances.length)*self.crypto.getRandomValues(new Uint32Array(1))[0]/2**32|0); // cryptographically secure random number from 1 to the size of the list above
       // the next lines display both the query submitted by the user and the instance it will be submitted with
       document.getElementById('query').innerText='Searching for `' + query + '` using:';
