@@ -11,7 +11,7 @@ Current Target Version: 127
 
 ## Flags
 
-`WinSboxRestrictCoreSharingOnRenderer,WinSboxZeroAppShim,RendererAppContainer,EnableCsrssLockdown`
+`WinSboxZeroAppShim,RendererAppContainer,EnableCsrssLockdown`
 \
 Improves the sandboxing of Renderers.
 \

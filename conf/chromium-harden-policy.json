@@ -8,7 +8,6 @@
 		"BrowserLabsEnabled (annoyance) - UI bloat and experimental garbage no-one needs",
 		"BrowserNetworkTimeQueriesEnabled (privacy) - prevents the browser from performing NTP queries",
 		"BrowserSignin (privacy annoyance) - overrides default value, disables account services",
-		"ChromeDataRegionSetting (privacy) - sets Chrome data to be stored in Europe potentially (not enabled)",
 		"ChromeVariations (privacy) - prevents Chromium from overriding features remotely",
 		"ClearBrowsingDataOnExitList (privacy ~security) - data specified will be cleared when the 'exit' button is pressed, this is mainly useless data that just wastes space or has privacy implication",
 		"ClickToCallEnabled (privacy) - disables phone number sharing for Chromium browser across devices",
