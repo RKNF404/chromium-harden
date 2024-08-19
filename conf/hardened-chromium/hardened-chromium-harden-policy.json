@@ -6,5 +6,4 @@
 	
 	"ExtensionSettings": {"*":{"allowed_types": ["extension"],"blocked_install_message": "Chromium Harden doesn't allow extensions","installation_mode": "blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh": {"installation_mode": "allowed",}},
 	"NativeMessagingBlocklist": ["*"],
-	"NewTabPageLocation": "file:///etc/chromium/pages/newtab.html",
 }
