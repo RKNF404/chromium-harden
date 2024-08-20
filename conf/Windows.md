@@ -16,11 +16,6 @@ Current Target Version: 127
 Improves the sandboxing of Renderers.
 \
 \
-`NetworkServiceCodeIntegrity`
-\
-Enables CIG in the Network service before it is launched.
-\
-\
 `ThirdPartyModuleBlocking`
 \
 Prevents code injection into the main process.
