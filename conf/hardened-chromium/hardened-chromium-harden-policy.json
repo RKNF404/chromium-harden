@@ -1,11 +1,9 @@
 {
 	"VERSION": 128,
 	
-	"NTPCardsVisible": false,
-	"NTPMiddleSlotAnnouncementVisible": false,
 	"ShoppingListEnabled": false,
-	
 	"PrivateNetworkAccessRestrictionsEnabled": true,
+	
 	"ExtensionSettings": {"*":{"allowed_types": ["extension"],"blocked_install_message": "Chromium Harden doesn't allow extensions","installation_mode": "blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh": {"installation_mode": "allowed",}},
 	"NativeMessagingBlocklist": ["*"],
 }
