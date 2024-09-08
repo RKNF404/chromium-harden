@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang=en>
   <head>
-    <meta http-equiv=Content-Security-Policy content="default-src 'none'; script-src-elem 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline'; frame-src 'self'; form-action https://searxng.shreven.org https://gruble.de https://searx.ox2.fr https://search.mdosch.de https://search.privacyredirect.com https://searx.foss.family https://search.im-in.space; base-uri 'none'; require-trusted-types-for 'script'; trusted-types query; upgrade-insecure-requests;"> <!-- strict CSP to prevent XSS and redirecting to external domains via forms -->
+    <meta http-equiv=Content-Security-Policy content="default-src 'none'; script-src-elem 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline'; frame-src 'self'; form-action https://searx.ox2.fr https://gruble.de https://search.mdosch.de https://search.privacyredirect.com https://search.im-in.space; base-uri 'none'; require-trusted-types-for 'script'; trusted-types query; upgrade-insecure-requests;"> <!-- strict CSP to prevent XSS and redirecting to external domains via forms -->
     <meta name=referrer content=no-referrer>
     <meta charset=utf-8>
     <style>
@@ -32,7 +32,7 @@
       function sanitize(string) { return string.replaceAll("'", '"').replaceAll('`', '"'); } // Function to replace dangerous characters
       const query = sanitize(new URLSearchParams(document.location.search).get('q')); // gets the query input and sanitizes it
       const sanitized = trustedTypes.createPolicy("query", { createHTML: (input) => `<input type=hidden name=q value='` + query + `'>`, }); // create trusted types policy to prevent additional injection
-      const instances = ['searxng.shreven.org', 'gruble.de', 'searx.ox2.fr', 'search.mdosch.de', 'search.privacyredirect.com', 'searx.foss.family', 'search.im-in.space']; // a few instances that are reliable and I personally trust
+      const instances = ['searx.ox2.fr', 'gruble.de', 'search.mdosch.de', 'search.privacyredirect.com', 'search.im-in.space']; // a few instances that are reliable and I personally trust
       const rand = Math.floor((instances.length)*self.crypto.getRandomValues(new Uint32Array(1))[0]/2**32|0); // cryptographically secure random number from 1 to the size of the list above
       // the next lines display both the query submitted by the user and the instance it will be submitted with
       document.getElementById('query').innerText='Searching for `' + query + '` using:';
