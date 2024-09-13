@@ -1,11 +1,11 @@
 {
 	"POLICY_COMMENTS_DNS": [
 		"This policy is designed to enable secure DNS (DoH) since it becomes unavailable in managed browsers, for which every policy causes the browser to become managed",
-		"Below are some options you can add instead of the default DNS:",
-		" - Control D (https://controld.com/free-dns)",
-		" - Cloudflare DNS (https://developers.cloudflare.com/1.1.1.1/setup/, no adblocking)",
-		" - Mullvad DNS (https://github.com/mullvad/dns-blocklists, weak malware blocking)",
-		" - DNSForge (https://dnsforge.de, can be very slow)",
+		"Below are some options you can look into adding instead of the default:",
+		" - Control D Free (https://controld.com/free-dns, most configurable)",
+		" - Mullvad DNS (https://github.com/mullvad/dns-blocklists, best reputation, weak malware blocking)",
+		" - DNSForge (https://dnsforge.de, strongest filtering, can be very slow)",
+		" - Cloudflare DNS (https://developers.cloudflare.com/1.1.1.1/setup/, fastest and most popular, no adblocking and some data logging)",
 	],
 	
 	"DnsOverHttpsMode": "secure",
