@@ -1,9 +1,7 @@
-{
-	"VERSION": 128,
-	
-	"ShoppingListEnabled": false,
+{	
+	"TabCompareSettings": false,
 	"PrivateNetworkAccessRestrictionsEnabled": true,
 	
-	"ExtensionSettings": {"*":{"allowed_types": ["extension"],"blocked_install_message": "Chromium Harden doesn't allow extensions","installation_mode": "blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh": {"installation_mode": "allowed",}},
 	"NativeMessagingBlocklist": ["*"],
+	"ExtensionSettings": {"*":{"allowed_types":["extension"],"installation_mode":"blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh":{"installation_mode":"allowed","override_update_url": true,"update_url":"https://clients2.google.com/service/update2/crx",}},
 }
