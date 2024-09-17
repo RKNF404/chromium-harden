@@ -3,7 +3,7 @@
 Hardening files for the Chromium browser for Linux.
 \
 \
-Want to know what each setting does? Go to `about:policy` in your browser and scroll the policies named POLICY_COMMENTS, they detail every change from their respective policy files. For flags, go to terminal and type `nano /etc/chromium/chromium.conf`, or open that file in your favorite text editor or viewer of choice, this will allow you to look at every flag and feature and what it approximately does.
+Want to know what each setting does? Go to `about:policy` in your browser and scroll the policies named POLICY_COMMENTS, they detail every change from their respective policy files. For flags, go to terminal and type `cat /etc/chromium/chromium.conf`, or open that file in your favorite text editor or viewer of choice, this will allow you to look at every flag and feature and what it approximately does.
 
 ## Config Priority
 
