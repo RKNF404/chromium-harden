@@ -1,24 +1,16 @@
 {
-	"VERSION_RECOMMEND": 129,
+	"VERSION_RECOMMEND": 130,
 	"POLICY_COMMENTS_RECOMMEND": [
 		"AutofillAddressEnabled (security) - disables address autofill",
-		"AutofillCreditCardEnabled (security) - disables credit card autofill",
-		"BackgroundModeEnabled (annoyance performance privacy) - disables background mode",
-		"BlockThirdPartyCookies (privacy) - blocks third-party cookies by default",
 		"NetworkPredictionOptions (privacy -performance) - disables preloading",
 		"PasswordManagerEnabled (security) - disables password manager",
-		"SearchSuggestEnabled (security) - disables search suggestions",
 		"SpellcheckEnabled (~privacy) - disables spell check",
 		"TranslateEnabled (privacy) - disables Google Translate",
 	],
 	
 	"AutofillAddressEnabled": false,
-	"AutofillCreditCardEnabled": false,
-	"BackgroundModeEnabled": false,
-	"BlockThirdPartyCookies": true,
 	"NetworkPredictionOptions": 2,
 	"PasswordManagerEnabled": false,
-	"SearchSuggestEnabled": false,
 	"SpellcheckEnabled": false,
 	"TranslateEnabled": false,
 }
