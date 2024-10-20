@@ -40,7 +40,7 @@
 		"RemoteAccessHostFirewallTraversal (security privacy) - disables firewall awareness for remote access connections",
 		"RemoteDebuggingAllowed (security) - seems risky to have enabled for non-debugging purposes",
 		"SafeBrowsingDeepScanningEnabled (privacy -security) - disables sending downloads to Google for safe browsing analysis",
-		"SafeBrowsingProxiedRealTimeChecksAllowed (privacy -security) - sacrifice minor security in favor of not websites to Google for Safe Browsing",
+		"SafeBrowsingProxiedRealTimeChecksAllowed (privacy -security) - sacrifice minor security in favor of not sending websites to Google for Safe Browsing",
 		"SearchSuggestEnabled (privacy) - disables search suggestions",
 		"SharedClipboardEnabled (privacy) - disables sharing clipboard across devices",
 		"ShowFullUrlsInAddressBar (security annoyance) - no idea why they hide information in the URL bar",
