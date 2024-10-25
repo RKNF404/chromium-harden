@@ -1,57 +1,19 @@
 <!DOCTYPE html>
 <html lang=en>
   <head>
-    <meta http-equiv=Content-Security-Policy content="default-src 'none'; script-src-elem 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline'; frame-src 'self'; form-action https://searx.ox2.fr https://gruble.de https://search.mdosch.de https://searxng.shreven.org https://search.privacyredirect.com; base-uri 'none'; require-trusted-types-for 'script'; trusted-types query; upgrade-insecure-requests;"> <!-- strict CSP to prevent XSS and redirecting to external domains via forms -->
+    <meta http-equiv=Content-Security-Policy content="default-src 'none'; script-src-elem 'self'; style-src-elem 'self'; frame-src 'self'; form-action https://searx.ox2.fr https://searxng.shreven.org https://search.mdosch.de https://searx.namejeff.xyz/ https://gruble.de; base-uri 'none'; require-trusted-types-for 'script'; trusted-types query; upgrade-insecure-requests;"> <!-- strict CSP to prevent XSS and redirecting to external domains via forms -->
     <meta name=referrer content=no-referrer>
     <meta charset=utf-8>
-    <style>
-      body, html {
-        background-color: #3c3c3c;
-        width: 99%;
-        height: 99%;
-      }
-      div {
-        color: Snow;
-        padding-top: 5%;
-        font-size: 300%;
-      }
-      iframe {
-        border: none;
-        width: 0;
-        height: 0;
-      }
-    </style>
-    <title>Chromium Harden Search (SearXNG Randomizer)</title>
+    <link rel="stylesheet" href="/etc/chromium/pages/chromium-harden-search-styles.css">
+    <title>Chromium Harden Search</title>
   </head>
   <body>
     <div id=query align=center>
     </div>
     <div id=instance align=center>
     </div>
-    <script type=text/javascript>
-      function sanitize(string) { return string.replaceAll("'", '"').replaceAll('`', '"'); } // Function to replace dangerous characters
-      const query = sanitize(new URLSearchParams(document.location.search).get('q')); // gets the query input and sanitizes it
-      const sanitized = trustedTypes.createPolicy("query", { createHTML: (input) => `<input type=hidden name=q value='` + query + `'>`, }); // create trusted types policy to prevent additional injection
-      const instances = ['searx.ox2.fr', 'gruble.de', 'search.mdosch.de', 'searxng.shreven.org', 'search.privacyredirect.com']; // a few instances that are reliable and I personally trust
-      const rand = Math.floor((instances.length)*self.crypto.getRandomValues(new Uint32Array(1))[0]/2**32|0); // cryptographically secure random number from 1 to the size of the list above
-      // the next lines display both the query submitted by the user and the instance it will be submitted with
-      document.getElementById('query').innerText='Searching for `' + query + '` using:';
-      document.getElementById('instance').innerText=instances[rand];
-    </script>
     <iframe id=SearchFrame sandbox="allow-same-origin allow-top-navigation allow-forms" csp="default-src 'none'; form-action 'self'; base-uri 'none'; require-trusted-types-for 'script'; trusted-types 'none'; upgrade-insecure-requests;" referrerpolicy=no-referrer src=about:blank>
     </iframe>
-    <script type=text/javascript>
-      const doc = document.getElementById('SearchFrame').contentDocument; // locate the frame to open it
-      doc.open(); // open frame document for modification
-      const form = doc.createElement('form'); // create a form element in that frame
-      form.name = 'f'; // add name to form (to be able to submit it)
-      form.target = '_parent'; // tell form to redirect top-level document
-      form.action = 'https://' + instances[rand]; // set the url redirect to selected instance
-      form.method = 'POST'; // set the submit method
-      form.innerHTML = sanitized.createHTML(query); // add the input data (user's query, which should already be sanitized)
-      doc.appendChild(form); // add the form element to the frame
-      doc.f.submit(); // submit the created form (redirect to results page)
-      doc.close(); // closes the frame document
-    </script>
+    <script type=text/javascript src=/etc/chromium/pages/chromium-harden-search-script.js></script>
   </body>
 </html>
