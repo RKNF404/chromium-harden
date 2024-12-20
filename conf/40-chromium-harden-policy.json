@@ -15,7 +15,6 @@
 		"ClickToCallEnabled (privacy) - disables phone number sharing for Chromium browser across devices",
 		"CloudPrintProxyEnabled (privacy) - disables sharing printers with Google",
 		"DefaultBrowserSettingEnabled (annoyance) - default browser checking is so useless",
-		"DefaultJavaScriptJitSetting (security) - Chromium changed V8's behavior so that it overrides the '--jitless' flag when this is disabled (set to 2) and changed it so that ONLY JavaScript JIT is disabled not WASM (not used to allow users to enable WASM on sites that need it, but know that disabling V8 Optimizations will enable WASM, set this to 1 to lock disable WASM as well)",
 		"DefaultSensorsSetting (privacy security) - overrides default value, disables Sensors access",
 		"DesktopSharingHubEnabled (annoyance) - removes the sharing hub",
 		"DnsOverHttpsMode (privacy ~security) - enables opportunistic DoH",
