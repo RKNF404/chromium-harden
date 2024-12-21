@@ -23,6 +23,10 @@ Block the permission at `chrome://settings/content/autoVerify`\
 Set the permission at `chrome://settings/content/siteData` to `Delete data sites have saved to your device when you close all windows`, manually whitelist sites you may need
 Under `chrome://settings/onStartup`, set to open New Tab
 
+## Policies
+
+See the json files for the policies, their values, and the documententation for them.
+
 ## Flags
 
 `--component-updater=--disable-pings`\
