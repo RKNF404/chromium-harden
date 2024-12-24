@@ -124,7 +124,7 @@ Isolates cache to prevent cross-site tracking
 ***(security)***\
 Strengthens origin isolation
 
-#### `WinSboxFilterServiceEnvironment`
+##### `WinSboxFilterServiceEnvironment`
 ***(security WINDOWS_ONLY)***\
 Filters environment variables from service processes
 
