@@ -48,7 +48,7 @@ To encourage ephemerality, with globally persistent flags it can also launch ext
 `--js-flags=--jitless`\
 ***(security)***\
 Disables Just-In-Time (JIT) compiled JavaScript, JIT is a *massive* security risk, it should be disabled by default, but it can risk approx 5-50% performance loss depending on the website\
-If you experience issues with a site, try **disabling** V8 security for that site under `chrome://settings/content/v8`, this will enable some optimizers in reference to the default this flag offers\
+If you experience issues with a site, try **disabling** V8 security for that site under `chrome://settings/content/v8`, this will enable some optimizers in reference to the default this flag offers.\
 *For Windows*, uses Arbitrary Code Guard (ACG) to prevent renderer processes from violating W^X, and enables the Intel hardware shadow stack to enforce backward-edge CFI
 
 `--no-pings`\
@@ -88,6 +88,14 @@ Isolate Content Settings by Origin
 ***(security WINDOWS_ONLY)***\
 Prevents renderer processes from having access to the CSRSS service
 
+`MacSyscallSandbox`\
+***(security MACOS_ONLY NOT_TESTED)***\
+Enables syscall filtering for the sandbox on MacOS
+
+`NetworkServiceCodeIntegrity`\
+***(security WINDOWS_ONLY)***\
+Enable Code Integrity Guard (CIG) in the Network Service process pre-launch
+
 `PartitionConnectionsByNetworkIsolationKey`\
 ***(privacy)***\
 Isolates connection information to prevent cross-site tracking
@@ -116,8 +124,16 @@ Isolates cache to prevent cross-site tracking
 ***(security)***\
 Strengthens origin isolation
 
+#### `WinSboxFilterServiceEnvironment`
+***(security WINDOWS_ONLY)***\
+Filters environment variables from service processes
+
+`WinSboxRestrictCoreSharingOnRenderer`\
+***(security WINDOWS_ONLY)***\
+Prevents renderers from sharing a core with other processes, to prevent Hyperthreading/SMT based side-channel attacks
+
 `WinSboxZeroAppShim`\
-***(security)***\
+***(security WINDOWS_ONLY)***\
 Disables compatibility modes for the renderer
 
 ## Features (Disable)
