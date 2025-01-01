@@ -159,7 +159,7 @@ Limits extensions that can be installed, depending on which **one-of** the follo
 ###### `ExtensionSettings (Option 1)`
 Value: `{"*":{"allowed_types":["extension"],"installation_mode":"blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh":{"installation_mode":"allowed","override_update_url": true,"update_url":"https://clients2.google.com/service/update2/crx",}}`\
 ***(security)***\
-Block all extensions and extension types but allow uBlock Origin Lite, sets the update source to a trusted location and whitelists the currently used permissions
+Block all extensions and extension types but allow uBlock Origin Lite, sets the update source to a trusted location
 
 ###### `ExtensionSettings (Option 2)`
 Value: `{"*":{"installation_mode":"blocked",}}`\
