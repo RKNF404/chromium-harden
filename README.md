@@ -100,6 +100,11 @@ Value: `false`\
 ***(privacy)***\
 Disables phone number sharing for Chromium browser across devices
 
+#### `CloudAPAuthEnabled`
+Value: `false`\
+***(privacy WINDOWS_ONLY)***\
+Disables automatic Microsoft cloud identity authentication
+
 #### `CloudPrintProxyEnabled`
 Value: `false`\
 ***(privacy)***\
@@ -135,6 +140,11 @@ Enable encrypted DNS if the next policy is set
 Value: `"https://freedns.controld.com/p2"`\
 ***(REQUIRES_DnsOverHttpsMode-Option-2)***\
 The default DNS used here offers a variety of DNS security features including ECH and content blocking, but any decent DNS resolver could go here instead
+
+#### `DynamicCodeSettings`
+Value: `1`\
+***(security WINDOWS_ONLY)***\
+Uses ACG for the browser process to enforce W^X
 
 #### `EnableMediaRouter`
 Value: `false`\
