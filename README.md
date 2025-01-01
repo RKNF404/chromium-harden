@@ -33,7 +33,248 @@ Under `chrome://settings/onStartup`, set to open New Tab
 
 ## Policies
 
-See the json files for the policies, their values, and the documententation for them.
+#### `AlternateErrorPagesEnabled`
+Value: `false`\
+***(privacy)***
+
+#### `AudioSandboxEnabled`
+Value: `true`\
+***(security)***
+
+#### `AuthSchemes`
+Value: `"ntlm,negotiate"`\
+***(security)***\
+Restricts to more secure authentication schemes
+
+#### `AutofillAddressEnabled`
+Value: `false`\
+***(security)***
+
+#### `AutofillCreditCardEnabled`
+Value: `false`\
+***(security)***
+
+#### `BackgroundModeEnabled`
+Value: `false`\
+***(annoyance performance privacy)***
+
+#### `BlockExternalExtensions`
+Value: `true`\
+***(security)***
+
+#### `BlockThirdPartyCookies`
+Value: `true`\
+***(privacy)***
+
+#### `BrowserLabsEnabled`
+Value: `false`\
+***(annoyance)***\
+Removes UI bloat and experimental garbage no-one needs
+
+#### `BrowserSignin`
+Value: `0`\
+***(privacy annoyance)***\
+Disables account sign-in with the browser
+
+#### `ChromeVariations`
+Value: `2`\
+***(privacy annoyance)***\
+Prevents Chromium from overriding features remotely
+
+#### `ClearBrowsingDataOnExitList`
+***(privacy ~security OPTIONAL)***\
+Clears data on exit, use **one-of** the following 2 options
+
+###### `ClearBrowsingDataOnExitList (Option 1)`
+Value: `["download_history","cached_images_and_files","autofill","hosted_app_data"]`\
+***(privacy OPTIONAL)***\
+Clears some useless data on exit, this can be configured if something is needed
+
+###### `ClearBrowsingDataOnExitList (Option 2)`
+Value: `["browsing_history","download_history","cookies_and_other_site_data","cached_images_and_files","password_signin","autofill","site_settings","hosted_app_data"]`\
+***(privacy ~security OPTIONAL)***\
+Clears all data on exit, **WILL RESULT IN DATA LOSS**
+
+#### `ClickToCallEnabled`
+Value: `false`\
+***(privacy)***\
+Disables phone number sharing for Chromium browser across devices
+
+#### `CloudPrintProxyEnabled`
+Value: `false`\
+***(privacy)***\
+Disables sharing printers with Google
+
+#### `DefaultBrowserSettingEnabled`
+Value: `false`\
+***(annoyance)***
+
+#### `DefaultSensorsSetting`
+Value: `2`\
+***(security privacy)***
+
+#### `DesktopSharingHubEnabled`
+Value: `false`\
+***(annoyance)***
+
+#### `DnsOverHttpsMode`
+***(privacy ~security)***\
+Enable encrypted DNS, use values from **one-of** the next 2 options
+
+###### `DnsOverHttpsMode (Option 1)`
+Value: `"automatic"`\
+***(~privacy ~security)***\
+Enable automatic use of encrypted DNS if available by the system/network DNS
+
+###### `DnsOverHttpsMode (Option 2)`
+Value: `"secure"`\
+***(privacy ~security OPTIONAL)***\
+Enable encrypted DNS if the next policy is set
+
+#### `DnsOverHttpsTemplates`
+Value: `"https://freedns.controld.com/p2"`\
+***(REQUIRES_DnsOverHttpsMode-Option-2)***\
+The default DNS used here offers a variety of DNS security features including ECH and content blocking, but any decent DNS resolver could go here instead
+
+#### `EnableMediaRouter`
+Value: `false`\
+***(privacy)***\
+Disable Chrome Cast
+
+#### `ExtensionSettings`
+***(security)***\
+Technically *optional*, but it should not be\
+Limits extensions that can be installed, depending on which **one-of** the following 2 options you choose
+
+###### `ExtensionSettings (Option 1)`
+Value: `{"*":{"allowed_types":["extension"],"installation_mode":"blocked",},"ddkjiahejlhfcafbddmgiahcphecmpfh":{"installation_mode":"allowed","override_update_url": true,"update_url":"https://clients2.google.com/service/update2/crx",}}`\
+***(security)***\
+Block all extensions and extension types but allow uBlock Origin Lite, sets the update source to a trusted location and whitelists the currently used permissions
+
+###### `ExtensionSettings (Option 2)`
+Value: `{"*":{"installation_mode":"blocked",}}`\
+***(security OPTIONAL)***\
+Block all extensions
+
+#### `GenAiDefaultSettings`
+Value: `2`\
+***(privacy)***\
+Disables all AI features
+
+#### `GoogleSearchSidePanelEnabled`
+Value: `false`\
+***(privacy)***\
+Disables some other AI features that deal with Google search and the side-panel
+
+#### `HistoryClustersVisible`
+Value: `false`\
+***(annoyance)***
+
+#### `HttpsOnlyMode`
+Value: `force_enabled`\
+***(security)***
+
+#### `MetricsReportingEnabled`
+Value: `false`\
+***(privacy)***
+
+#### `NativeMessagingBlocklist`
+Value: `["*"]`\
+***(security)***\
+Prevents extensions from communicating with native apps
+
+#### `NetworkPredictionOptions`
+Value: `2`\
+***(privacy -performance)***
+
+#### `NetworkServiceSandboxEnabled`
+Value: `true`\
+***(security)***
+
+#### `PasswordManagerEnabled`
+Value: `false`\
+***(security)***\
+Technicall *optional*, but you should really just use a dedicated app or something
+
+#### `PaymentMethodQueryEnabled`
+Value: `false`\
+***(security)***
+
+#### `PrivacySandboxPromptEnabled`
+Value: `false`\
+***(privacy)***\
+Disables Privacy Sandbox features
+
+#### `PrivateNetworkAccessRestrictionsEnabled`
+Value: `true`\
+***(security)***\
+Restricts access to local (private) addresses for websites
+
+#### `PromotionsEnabled`
+Value: `false`\
+***(privacy)***
+
+#### `PromptForDownloadLocation`
+Value: `true`\
+***(security)***
+
+#### `RelatedWebsiteSetsEnabled`
+Value: `false`\
+***(privacy)***\
+Prevents sites from sharing cookies with "related" sites
+
+#### `RemoteAccessHostAllowRemoteAccessConnections`
+Value: `true`\
+***(security privacy)***\
+Why is there remote access in a browser?
+
+#### `RemoteAccessHostAllowRemoteAccessConnections`
+Value: `false`\
+***(security privacy)***\
+Ibid
+
+#### `RemoteAccessHostFirewallTraversal`
+Value: `false`\
+***(security privacy)***\
+Disables firewall awareness for remote access connections
+
+#### `RemoteDebuggingAllowed`
+Value: `false`\
+***(security)***
+
+#### `SafeBrowsingDeepScanningEnabled`
+Value: `false`\
+***(privacy -security OPTIONAL)***\
+Sending downloaded files to the cloud to be scanned is not a good idea privacy-wise and has little security benefit
+
+#### `SafeBrowsingProxiedRealTimeChecksAllowed`
+Value: `false`\
+***(privacy -security OPTIONAL)***\
+Sacrifice minor security in favor of not sending websites to Google for Safe Browsing
+
+#### `SearchSuggestEnabled`
+Value: `false`\
+***(privacy OPTIONAL)***
+
+#### `SharedClipboardEnabled`
+Value: `false`\
+***(privacy)***
+
+#### `ShowFullUrlsInAddressBar`
+Value: `false`\
+***(annoyance OPTIONAL)***
+
+#### `TranslateEnabled`
+Value: `false`\
+***(privacy OPTIONAL)***
+
+#### `WebRtcIPHandling`
+Value: `"disable_non_proxied_udp"`\
+***(privacy OPTIONAL)***
+
+#### `WebRtcTextLogCollectionAllowed`
+Value: `false`\
+***(privacy)***
 
 ## Flags
 
