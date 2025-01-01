@@ -2,7 +2,7 @@
 
 Last updated for: `131`
 
-Hardening files for (theoretically) any Chromium browser.
+Hardening guide for (theoretically) any Chromium browser.
 
 ## Quick Links
 
