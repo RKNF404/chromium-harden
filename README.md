@@ -1,8 +1,16 @@
-# Chromium Harden
+# Chromium Hardening Guide
 
 Last updated for: `131`
 
 Hardening files for (theoretically) any Chromium browser.
+
+## Quick Links
+
+- [Preferences](#preferences)
+- [Policies](#policies)
+- [Flags](#flags)
+- [Features (Enable)](#features-enable)
+- [Features (Disable)](#features-disable)
 
 ## Config Priority
 
