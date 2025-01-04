@@ -220,6 +220,12 @@ Value: `2`\
 #### `NetworkServiceSandboxEnabled`
 Value: `true`\
 ***(security)***
+Enables various mitigations when used on Windows, but requires running the following command to enable it:
+```
+cd <where_is_the_exe>
+icacls . /grant "*S-1-15-2-2:(OI)(CI)(RX)"
+```
+[(Thank you Cromite)](https://github.com/uazo/cromite?tab=readme-ov-file#enable-network-process-sandbox-in-windows)
 
 #### `PasswordManagerEnabled`
 Value: `false`\
@@ -291,7 +297,7 @@ Value: `false`\
 ***(privacy)***
 
 #### `ShowFullUrlsInAddressBar`
-Value: `false`\
+Value: `true`\
 ***(annoyance OPTIONAL)***
 
 #### `TabCompareSettings`
