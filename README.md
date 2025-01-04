@@ -110,6 +110,11 @@ Value: `false`\
 ***(privacy)***\
 Disables sharing printers with Google
 
+#### `CreateThemesSettings`
+Value: `2`\
+***(privacy)***\
+Disables AI for theme creation
+
 #### `DefaultBrowserSettingEnabled`
 Value: `false`\
 ***(annoyance)***
@@ -121,6 +126,11 @@ Value: `2`\
 #### `DesktopSharingHubEnabled`
 Value: `false`\
 ***(annoyance)***
+
+#### `DevToolsGenAiSettings`
+Value: `2`\
+***(privacy)***\
+Disables AI for dev tools/console
 
 #### `DnsOverHttpsMode`
 ***(privacy ~security)***\
@@ -166,19 +176,29 @@ Value: `{"*":{"installation_mode":"blocked",}}`\
 ***(security OPTIONAL)***\
 Block all extensions
 
-#### `GenAiDefaultSettings`
-Value: `2`\
+#### `GenAILocalFoundationalModelSettings`
+Value: `1`\
 ***(privacy)***\
-Disables all AI features
+Disables AI model downloading
 
 #### `GoogleSearchSidePanelEnabled`
 Value: `false`\
 ***(privacy)***\
 Disables some other AI features that deal with Google search and the side-panel
 
+#### `HelpMeWriteSettings`
+Value: `2`\
+***(privacy)***\
+Disables AI for writing
+
 #### `HistoryClustersVisible`
 Value: `false`\
 ***(annoyance)***
+
+#### `HistorySearcgSettings`
+Value: `2`\
+***(privacy)***\
+Disables AI for history searches
 
 #### `HttpsOnlyMode`
 Value: `force_enabled`\
@@ -274,6 +294,16 @@ Value: `false`\
 Value: `false`\
 ***(annoyance OPTIONAL)***
 
+#### `TabCompareSettings`
+Value: `2`\
+***(privacy)***\
+Disables AI for tab analysis
+
+#### `TabOrganizerSettings`
+Value: `2`\
+***(privacy)***\
+Disables AI for tab organization
+
 #### `TranslateEnabled`
 Value: `false`\
 ***(privacy OPTIONAL)***
@@ -329,6 +359,10 @@ But, some platforms offer alternate rendering methods which may be better, such 
 ##### `AcceleratedVideoDecodeLinuxGL,AcceleratedVideoDecodeLinuxZeroCopyGL,AcceleratedVideoEncoder`
 ***(performance LINUX_ONLY)***\
 Enable hardware accelerated video decoding and encoding on Linux platforms
+
+##### `BlockCrossPartitionBlobUrlFetching`
+***(privacy)***\
+Enhances site partitioning
 
 ##### `CapReferrerToOriginOnCrossOrigin`
 ***(privacy)***\
