@@ -195,7 +195,7 @@ Disables AI for writing
 Value: `false`\
 ***(annoyance)***
 
-#### `HistorySearcgSettings`
+#### `HistorySearchSettings`
 Value: `2`\
 ***(privacy)***\
 Disables AI for history searches
@@ -254,11 +254,11 @@ Value: `false`\
 Prevents sites from sharing cookies with "related" sites
 
 #### `RemoteAccessHostAllowRemoteAccessConnections`
-Value: `true`\
+Value: `false`\
 ***(security privacy)***\
 Why is there remote access in a browser?
 
-#### `RemoteAccessHostAllowRemoteAccessConnections`
+#### `RemoteAccessHostAllowRemoteSupportConnections`
 Value: `false`\
 ***(security privacy)***\
 Ibid
