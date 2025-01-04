@@ -431,10 +431,6 @@ Filters environment variables from service processes
 ***(security WINDOWS_ONLY)***\
 Prevents renderers from sharing a core with other processes, to prevent Hyperthreading/SMT based side-channel attacks
 
-##### `WinSboxZeroAppShim`
-***(security WINDOWS_ONLY)***\
-Disables compatibility modes for the renderer
-
 ## Features (Disable)
 (`--disable-features=`)
 
