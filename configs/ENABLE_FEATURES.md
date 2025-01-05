@@ -64,6 +64,10 @@ Isolates cache to prevent cross-site tracking
 ***(security)***\
 Strengthens origin isolation
 
+##### `VaapiOnNvidiaGPUs`
+***(performance LINUX_ONLY NVIDIA_ONLY)***\
+Enable hardware accelerated video decoding on Nvidia GPUs
+
 ##### `WinSboxFilterServiceEnvironment`
 ***(security WINDOWS_ONLY)***\
 Filters environment variables from service processes
