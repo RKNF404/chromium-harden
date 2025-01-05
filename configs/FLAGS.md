@@ -13,7 +13,7 @@ Disable crash reporting
 Forces all extensions to be validated to prevent tampering
 
 ##### `--incognito`
-***(privacy)***\
+***(privacy OPTIONAL)***\
 To encourage ephemerality, with globally persistent flags it can also launch external links in Incognito
 
 ##### `--js-flags=--jitless`
@@ -32,5 +32,9 @@ This will set your browser to launch with Wayland or X11 depending on your sessi
 
 ##### `--use-gl=angle --use-angle=gl`
 ***(performance LINUX_ONLY)***\
-Mostly targeted at Linux, but any platform should be able to use this without issues\
+Mostly targeted at Linux, but any platform should be able to use this without issues, used for hardware acceleration\
 But, some platforms offer alternate rendering methods which may be better, such as Metal on Mac or Vulkan on Android and Linux
+
+##### `--use-gl=angle --use-angle=vulkan`
+***(performance OPTIONAL LINUX_ONLY)***\
+Enables Vulkan rendering, currently only supported on X11, replaces the previous flag
