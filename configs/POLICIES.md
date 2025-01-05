@@ -1,4 +1,5 @@
 # Policies
+Windows note: All policies with a value of `true` and `false` are represented as `1` and `0` in the registry respectively
 
 ## Chrome/Chromium
 
@@ -172,6 +173,16 @@ Disables AI for history searches
 #### `HttpsOnlyMode`
 Value: `force_enabled`\
 ***(security)***
+
+#### `LensOverlay`
+Value: `1`\
+***(privacy)***\
+Disables performing Google searches using webpage screenshots
+
+#### `LensRegionSearchEnabled`
+Value: `false`\
+***(privacy)***\
+Disables context menu image searches with Lens
 
 #### `MetricsReportingEnabled`
 Value: `false`\
