@@ -4,3 +4,16 @@ The following guide will assist in setting up and using a Chromium based browser
 \
 \
 Please note that while I intend for this to be as comprehensive as possible, there will be gaps. For example, I do not have a Mac or a ChromeOS device so I am not capable of offering up-to-date info on methods or options for those systens.
+
+## Quick Links
+
+- [Selecting a browser](#selecting-a-browser)
+- [](#)
+
+# Selecting a browser
+
+## Baseline
+
+The most important detail of a browser is 100% update cycle. Everything else security-wise is useless if the browser is updated once every few months.
+\
+The next most important element is build quality, i.e. does it offer at least chromium's default or higher. Most often this is control-flow-integrity (CFI), it is an upstream default in chromium yet for some reason many forks or Linux distros [explicitly disable it](https://salsa.debian.org/chromium-team/chromium/-/blob/master/debian/rules?ref_type=heads#L103).
