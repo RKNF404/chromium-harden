@@ -14,6 +14,6 @@ Please note that while I intend for this to be as comprehensive as possible, the
 
 ## Baseline
 
-The most important detail of a browser is 100% update cycle. Everything else security-wise is useless if the browser is updated once every few months.
+The most important security detail of a browser is 100% update cycle. Everything else security-wise is useless if the browser is updated once every few months.
 \
 The next most important element is build quality, i.e. does it offer at least chromium's default or higher. Most often this is control-flow-integrity (CFI), it is an upstream default in chromium yet for some reason many forks or Linux distros [explicitly disable it](https://salsa.debian.org/chromium-team/chromium/-/blob/master/debian/rules?ref_type=heads#L103).
