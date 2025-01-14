@@ -40,6 +40,4 @@ The last aspect is additional features on top of vanilla chromium and more secur
 
 #### Linux
 
-##### Native
-
 ##### Flatpak
