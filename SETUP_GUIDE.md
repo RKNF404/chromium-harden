@@ -21,3 +21,25 @@ The next most important element is build quality, i.e. does it offer at least ch
 \
 \
 The last aspect is additional features on top of vanilla chromium and more secure/private defaults. This also includes the ability to control insecure or unprivate features such as telemetry, or web assembly, etc. This isn't that important and can be optionally ignored, but it is something to be aware of.
+
+## Popular Options
+
+### Chrome
+
+### Edge
+
+### Opera
+
+### Brave
+
+### ungoogled-chromium
+
+### Vanilla Chromium
+
+#### Windows
+
+#### Linux
+
+##### Native
+
+##### Flatpak
