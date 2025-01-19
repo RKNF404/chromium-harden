@@ -14,8 +14,9 @@ Hardening guide for (theoretically) any Chromium browser.
 
 ## Quick Links
 
-- [Preferences](configs/PREFERENCES.md)
-- [Policies](configs/POLICIES.md)
-- [Flags](configs/FLAGS.md)
-- [Features (Enable)](configs/ENABLE_FEATURES.md)
-- [Features (Disable)](configs/DISABLE_FEATURES.md)
+- [Setup Guide](SETUP_GUIDE.md)
+- [Preferences](/configs/PREFERENCES.md)
+- [Policies](/configs/POLICIES.md)
+- [Flags](/configs/FLAGS.md)
+- [Features (Enable)](/configs/ENABLE_FEATURES.md)
+- [Features (Disable)](/configs/DISABLE_FEATURES.md)
