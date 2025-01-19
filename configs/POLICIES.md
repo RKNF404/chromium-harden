@@ -1,8 +1,6 @@
 # Policies
 Windows note: All policies with a value of `true` and `false` are represented as `1` and `0` in the registry respectively
 
-## Chrome/Chromium
-
 #### `AlternateErrorPagesEnabled`
 Value: `false`\
 ***(privacy)***
