@@ -1,8 +1,6 @@
 # Features (Enable)
 (`--enable-features=`)
 
-## Chrome/Chromium
-
 ##### `AcceleratedVideoDecodeLinuxGL,AcceleratedVideoDecodeLinuxZeroCopyGL,AcceleratedVideoEncoder`
 ***(performance LINUX_ONLY)***\
 Enable hardware accelerated video decoding and encoding on Linux platforms
