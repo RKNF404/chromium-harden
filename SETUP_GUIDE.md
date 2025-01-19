@@ -11,6 +11,7 @@ Please note that while I intend for this to be as comprehensive as possible, the
   - [Baseline](#baseline)
   - [Proprietary vs Open-Source](#proprietary-vs-open-source)
   - [Popular Options](#popular-options)
+  - [Other Browsers](#other-browsers)
 - [Basic Setup](#basic-setup)
 
 # Selecting a browser
@@ -77,6 +78,18 @@ It suffers the issues of typical vanilla builds, but with the added issues of un
 #### Flatpak (Linux)
 
 As mentioned in the [Brave](#brave) section, ***AVOID***! Flatpak's security is... [questionable](https://flatkill.org/) but what's worse is chromium's security in Flatpak. Because Flatpak restricts the usage of Linux namespaces and prevents the use of SUID (for good reason), chromium's sandbox will literally not work. The solution is [zypak](https://github.com/refi64/zypak) or a [direct patch](https://github.com/flathub/org.chromium.Chromium/blob/master/patches/chromium/flatpak-Add-initial-sandbox-support.patch), the problem is these methods are very poorly configured to the point they essentially break the typically very strong sandboxing chromium provides. Flatpak *significantly* inhibits chromium's sandboxing, and there is no faithful implementation currently.
+
+## Other Browsers
+
+### Firefox
+
+#### Firefox Forks
+
+### Safari (Webkit)
+
+#### Epiphany (WebkitGTK)
+
+### Ladybird
 
 # Basic Setup
 
