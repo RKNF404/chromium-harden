@@ -67,7 +67,7 @@ Also lots of attack surface related to crypto stuff and borderline marketing gib
 
 ### Vanilla Chromium
 
-This depends heavily, but usually these are just open-source variants of Chrome with worse update-cycles. Like mentioned in the [baseline](#baseline) section, some have terrible unbuilding standards, like disabling CFI or bundling everything under the sun. Some variants go further by disabling the default memory allocator (PartitionAlloc), Debian for example used to use tcmalloc which is borderline a zero-security allocator built for performance. Most builds lack CFI, Fedora Linux only recently started using CFI.
+This depends heavily, but usually these are just open-source variants of Chrome with worse update-cycles. Like mentioned in the [baseline](#baseline) section, some have terrible building standards, like disabling CFI or unbundling everything under the sun. Some variants go further by disabling the default memory allocator (PartitionAlloc), Debian for example used to use tcmalloc which is borderline a zero-security allocator built for performance. Most builds lack CFI, Fedora Linux only recently started using CFI.
 
 #### ungoogled-chromium
 
