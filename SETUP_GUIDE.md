@@ -8,6 +8,9 @@ Please note that while I intend for this to be as comprehensive as possible, the
 ## Quick Links
 
 - [Selecting a browser](#selecting-a-browser)
+  - [Baseline](#baseline)
+  - [Proprietary vs Open-Source](#proprietary-vs-open-source)
+  - [Popular Options](#popular-options)
 - [](#)
 
 # Selecting a browser
