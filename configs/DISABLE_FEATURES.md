@@ -1,8 +1,6 @@
 # Features (Disable)
 (`--disable-features=`)
 
-## Chrome/Chromium
-
 ##### `AutofillServerCommunication`
 ***(privacy)***\
 Disables autofill server data exchange
