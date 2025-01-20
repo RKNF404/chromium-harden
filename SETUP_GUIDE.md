@@ -89,7 +89,7 @@ Firefox is [inherently insecure](https://madaidans-insecurities.github.io/firefo
 
 I don't think I need to go too much in depth, most FF forks are just regular Firefox with either UI changes or some changes to user-hostile defaults. They typically suffer slower update cycles.
 \
-I will talk about 2 specifically, Librewolf and Palemoon. Librewolf is just Firefox with defaults changed... nothing else. They don't even maintain the defaults, they just use [arkenfox-user.js](https://github.com/arkenfox/user.js/). They may have some changes but fundimentally it is just arkenfox built-into Firefox with a slower update cycle. Palemoon uses *ancient* code with some security patches backported, and it is single process so it cannot utilize any modern sandboxing technology (such as seccomp or namespaces). You can manually sandbox the browser but that doesn't isolate sites from each other.
+I will talk about 2 specifically, Librewolf and Palemoon. Librewolf is just Firefox with defaults changed... nothing else. They don't even maintain the defaults, they just use [arkenfox-user.js](https://github.com/arkenfox/user.js/). They may have some changes but fundamentally it is just arkenfox built-into Firefox with a slower update cycle. Palemoon uses *ancient* code with some security patches backported, and it is single process so it cannot utilize any modern sandboxing technology (such as seccomp or namespaces). You can manually sandbox the browser but that doesn't isolate sites from each other.
 
 ### Safari (Webkit)
 
