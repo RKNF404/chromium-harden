@@ -83,13 +83,25 @@ As mentioned in the [Brave](#brave) section, ***AVOID***! Flatpak's security is.
 
 ### Firefox
 
+Firefox is [inherently insecure](https://madaidans-insecurities.github.io/firefox-chromium.html). I can already see the reponses, "Last updated March 2022", "2/3 year old article", "Biased and outdated", but these are often said in a hand-wave manner with the hope that time has fixed the isses present in the article... they have not. Saying the article is old actually makes Firefox look *worse*, since it hasn't significantly improved in 3 years. To be fair, there has been improvement but not a lot and not a significant amount of it to make it comparible to Chromium based browsers (even from 3 yeas ago) or even Webkit based browsers at this point. This is especially true on Linux where the sandboxing is very poor, and Android where there is no website sandbox at all.
+
 #### Firefox Forks
+
+I don't think I need to go too much in depth, most FF forks are just regular Firefox with either UI changes or some changes to user-hostile defaults. They typically suffer slower update cycles.
+/
+I will talk about 2 specifically, Librewolf and Palemoon. Librewolf is just Firefox with defaults changed... nothing else. They don't even maintain the defaults, they just use [arkenfox-user.js](https://github.com/arkenfox/user.js/). They may have some changes but fundimentally it is just arkenfox built-into Firefox with a slower update cycle. Palemoon uses *ancient* code with some security patches backported, and it is single process so it cannot utilize any modern sandboxing technology (such as seccomp or namespaces). You can manually sandbox the browser but that doesn't isolate sites from each other.
 
 ### Safari (Webkit)
 
+I don't use Apple devices but security-wise Safari/Webkit is pretty decent. It may be behind on web standards but it has strong partitioning and has sandboxing on all supported platforms. Additionally, it can disable JIT JavaScript (and many other web features) on iOS and MacOS per-site using Lockdown Mode to be W^X compliant.
+
 #### Epiphany (WebkitGTK)
 
-### Ladybird
+WebkitGTK is the (I think) official Webkit port to Linux. It shares many of the same feaures of regular Webkit, sans some stuff that are iOS/MacOS/Apple specific. It is the only browser to support proper sandboxing in Flatpak but said sandboxing is notably weaker than chromium.
+
+### Android Webview Browsers
+
+These browsers cannot offer site-isolation due to how Android webview is designed. Typically they do not have strong partitioning and are very minimal in their features.
 
 # Basic Setup
 
