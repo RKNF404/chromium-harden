@@ -1,6 +1,6 @@
 # Chromium Hardening Guide
 
-Last updated for: `131`
+Last updated for: `132`
 
 Hardening guide for (theoretically) any Chromium browser.
 
