@@ -136,4 +136,4 @@ I am aware there is a method to persist flags, I am not aware of how to do it no
 
 ## Android
 
-There is a way to add flags via ADB (it may require root, I'm not sure), but I know very little about it and would advise against.
+There is a way to add flags via ADB, but I know very little about it and would advise against.
