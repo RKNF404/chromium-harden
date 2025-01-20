@@ -18,9 +18,9 @@ Please note that while I intend for this to be as comprehensive as possible, the
   - [Windows](#windows)
   - [MacOS](#macos)
 - [Flags](#persisting-flags)
-  - [Linux](#linux)
-  - [Windows](#windows)
-  - [MacOS](#macos)
+  - [Linux](#linux-1)
+  - [Windows](#windows-1)
+  - [MacOS](#macos-1)
   - [Android](#android)
 
 # Selecting a browser
