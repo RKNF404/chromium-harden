@@ -13,6 +13,15 @@ Please note that while I intend for this to be as comprehensive as possible, the
   - [Popular Options](#popular-options)
   - [Other Browsers](#other-browsers)
 - [Basic Setup](#basic-setup)
+- [Policies](#policies)
+  - [Linux](#linux)
+  - [Windows](#windows)
+  - [MacOS](#macos)
+- [Flags](#persisting-flags)
+  - [Linux](#linux)
+  - [Windows](#windows)
+  - [MacOS](#macos)
+  - [Android](#android)
 
 # Selecting a browser
 
@@ -106,3 +115,25 @@ These browsers cannot offer site-isolation due to how Android webview is designe
 # Basic Setup
 
 This is just preferences, so see [PREFERENCES.md](/configs/PREFERENCES.md). Everything else is covered by policies.
+
+# Policies
+
+## Linux
+
+## Windows
+
+## MacOS
+
+# Persisting Flags
+
+## Linux
+
+## Windows
+
+## MacOS
+
+I am aware there is a method to persist flags, I am not aware of how to do it nor do I have a way to test it.
+
+## Android
+
+There is a way to add flags via ADB (it may require root, I'm not sure), but I know very little about it and would advise against.
