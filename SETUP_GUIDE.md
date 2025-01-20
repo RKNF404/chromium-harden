@@ -13,7 +13,7 @@ Please note that while I intend for this to be as comprehensive as possible, the
   - [Popular Options](#popular-options)
   - [Other Browsers](#other-browsers)
 - [Basic Setup](#basic-setup)
-  - [Content Filtering](#content-filtering)
+  - [Content Blocking](#content-blocking)
 - [Policies](#policies)
   - [Linux](#linux)
   - [Windows](#windows)
