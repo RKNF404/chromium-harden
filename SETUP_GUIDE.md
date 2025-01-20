@@ -13,6 +13,7 @@ Please note that while I intend for this to be as comprehensive as possible, the
   - [Popular Options](#popular-options)
   - [Other Browsers](#other-browsers)
 - [Basic Setup](#basic-setup)
+  - [Content Filtering](#content-filtering)
 - [Policies](#policies)
   - [Linux](#linux)
   - [Windows](#windows)
@@ -115,6 +116,12 @@ These browsers cannot offer site-isolation due to how Android webview is designe
 # Basic Setup
 
 This is just preferences, so see [PREFERENCES.md](/configs/PREFERENCES.md). Everything else is covered by policies.
+
+## Content Blocking
+
+Content blocking is usually done one of 3 ways, Extensions, Native/Internal, and DNS/Network. Some are blatantly better than others.
+\
+For starters extensions are always bad. Especially MV2 extensions, but uBOL (uBlock Origin Light) in `Basic` mode is pretty good, since it hs no access to sites while still being able to deliver decent content-blocking. Other extensions and modes risk security and weaken site isolation.
 
 # Policies
 
