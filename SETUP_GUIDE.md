@@ -97,7 +97,7 @@ I don't use Apple devices but security-wise Safari/Webkit is pretty decent. It m
 
 #### Epiphany (WebkitGTK)
 
-WebkitGTK is the (I think) official Webkit port to Linux. It shares many of the same feaures of regular Webkit, sans some stuff that are iOS/MacOS/Apple specific. It is the only browser to support proper sandboxing in Flatpak but said sandboxing is notably weaker than chromium.
+WebkitGTK is the (I think) official Webkit port to Linux. It shares many of the same feaures of regular Webkit, sans some stuff that are iOS/MacOS/Apple specific. It is the only browser to support proper sandboxing in Flatpak but said sandboxing is notably weaker than native (non-flatpak, non-snap) chromium.
 
 ### Android Webview Browsers
 
