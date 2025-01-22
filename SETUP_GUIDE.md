@@ -65,11 +65,11 @@ Avoid. It has mandatory telemetry, poor update cycle, and tons of feature bloat.
 
 ### Brave
 
-Not terrible, but a weak option. It has one central advantage, the content-blocker. Everything else is either matching vanilla chromium or a degredation. For example, they enable MV2 support when that format is actively being deprecated in chromium. MV2 is awful for security, since it allows unrestricted access to all websites and all features to extensions. MV3, while not perfect, fixes many of these issues. In general extensions are bad for security but enabling MV2 is a step backwards. 
+Not terrible, but a weak option. It has one central advantage, the content-blocker. Everything else is either matching vanilla chromium, a degredation, or modifies a default. For example, they enable MV2 support when that format is actively being deprecated in chromium. MV2 is awful for security, since it allows unrestricted access to all websites and all features to extensions. MV3, while not perfect, fixes many of these issues. In general extensions are bad for security but enabling MV2 is a step backwards. 
 \
 They also verified their Flathub app. See the [Flatpak](#flatpak-linux) section as to why that is a problem. The issue is not that Brave is packaged as a Flatpak, many chromium browsers are, but they officially endorse it, which is a flagrant disregard for security.
 \
-Also lots of attack surface related to crypto stuff and borderline marketing gibberish about privacy, with rather ineffective fingerprinting resistance. The company itself is also questionable in its practices, but that is for you to decide.
+Also lots of attack surface related to crypto stuff and heavy privacy marketing (despite being rather intrusive by default), and rather ineffective fingerprinting resistance (has gaps making the mitigations bypassable). The company itself is also questionable in its practices, but that is for you to decide.
 
 ### Vivaldi
 
@@ -77,11 +77,11 @@ Also lots of attack surface related to crypto stuff and borderline marketing gib
 
 ### Vanilla Chromium
 
-This depends heavily, but usually these are just open-source variants of Chrome with worse update-cycles. Like mentioned in the [baseline](#baseline) section, some have terrible building standards, like disabling CFI or unbundling everything under the sun. Some variants go further by disabling the default memory allocator (PartitionAlloc), Debian for example used to use tcmalloc which is borderline a zero-security allocator built for performance. Many builds lack CFI, Fedora Linux only [recently](https://src.fedoraproject.org/rpms/chromium/c/d90f112feba409f4d6875033f98ff559919e35a6?branch=rawhide) started using it, but many simple distros like [Arch](https://gitlab.archlinux.org/archlinux/packaging/packages/chromium/-/blob/cd8f1d1e907b39dd2f1f494febba26d535f9b18a/PKGBUILD#L168) keep it enabled.
+This depends heavily, but usually these are just open-source variants of Chrome with worse update-cycles. Like mentioned in the [baseline](#baseline) section, some have terrible building standards, like disabling CFI or unbundling everything under the sun. Some variants (used to) go further by disabling the default memory allocator (PartitionAlloc), Debian for example used to use tcmalloc which is borderline a zero-security allocator built for performance. Replacing the allocator was deprecated in chromium for security reasons so no variants offer that anymore. Many builds lack CFI, Fedora Linux only [recently](https://src.fedoraproject.org/rpms/chromium/c/d90f112feba409f4d6875033f98ff559919e35a6?branch=rawhide) started using it, but many simple distros like [Arch](https://gitlab.archlinux.org/archlinux/packaging/packages/chromium/-/blob/cd8f1d1e907b39dd2f1f494febba26d535f9b18a/PKGBUILD#L168) keep it enabled.
 
 #### ungoogled-chromium
 
-[Bad](https://qua3k.github.io/ungoogled/). The update cycle is inconsistent at best, slow at worst. It disables the component updater which chromium depends on for security reasons, since many features such as CRLSets (used for certificate revocation) are updated as a component. The privacy isn't terrible, in the sense that no data can be collected, but the substantial security risk it offers is massive negative.
+[Bad](https://qua3k.github.io/ungoogled/). The update cycle is inconsistent at best, slow at worst. It disables the component updater which chromium depends on for security reasons, since many features such as CRLSets (used for certificate revocation) are updated as a component. The privacy isn't terrible, in the sense that no data can be collected, but the substantial security risk it offers is a massive negative.
 \
 It suffers the issues of typical vanilla builds, but with the added issues of ungoogled-chromium itself. For example, usage of [tcmalloc in the past](https://github.com/ungoogled-software/ungoogled-chromium-debian/commit/9f7246d1c29d58cd467c540d580ab15bcc9e8b88), but most notably current CFI.
 
