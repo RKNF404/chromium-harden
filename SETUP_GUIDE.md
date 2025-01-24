@@ -111,7 +111,7 @@ WebkitGTK is the (I think) official Webkit port to Linux. It shares many of the 
 
 ### Android Webview Browsers
 
-These browsers cannot offer site-isolation due to how Android webview is designed. Typically they do not have strong partitioning and are very minimal in their features.
+These browsers cannot offer site-isolation due to how Android webview is designed. Typically they do not have strong partitioning and are very minimal in their feature set.
 
 # Basic Setup
 
@@ -124,6 +124,8 @@ Content blocking is usually done one of 3 ways, Extensions, Native/Internal, and
 For starters extensions are always bad. Especially MV2 extensions, but uBOL (uBlock Origin Light) in `Basic` mode is pretty good, since it hs no access to sites while still being able to deliver decent content-blocking. Other extensions and modes risk security and weaken site isolation.
 \
 Native/Interal can mean one of 2 (technically 3) things. One is using the internal subresource filter, this is approx on-par with uBOL in `Basic` mode in terms of filtering capabilities. This is also the most secure since it is already built directly into chromium. The second option is to integrate a third-party filtering engine, this is done by Brave, Vivaldi, Opera, Cromite, and many other browsers. This can vary between a new engine, like [Brave](https://github.com/brave/adblock-rust/), or integrating an extension, like [Cromite](https://github.com/uazo/cromite/blob/master/build/patches/Eyeo-Adblock-for-Cromite.patch). Both have more attack surface but extension integration is much worse.
+\
+DNS/Network is arguably the most secure but the least effective of any method. With most content blocking you have to add trust in multiple entities and add extra attack surface. With DNS filtering, you are placing your trust in something you already have to trust. I would still suggest the usage of some DNS filtering in your browser, even if you have another content-blocking solution. It also has no performance impact and can resist some forms of censorship and tracking by encrypting not only DNS traffic but also the Client Hello (via ECH). Non-DNS network filtering has the same effectiveness with the added benefit of IP blocking, depending on the implementation.
 
 # Policies
 
