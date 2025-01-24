@@ -145,7 +145,7 @@ The structure of Linux policy files is standard `json` with each policy represen
   "PolicyDictionary": { "BooleanEntry": false, "StringEntry": "dictionary, "DictionaryEntry": { "TestEntry": 0, }, },
 }
 ```
-The formatting is very strict and will result in you policies not loading if they are incorrect.
+The formatting is very strict and will result in your policies not loading if they are incorrect.
 
 > [!NOTE]
 > When adding your file, make sure it is globally readable, some stricter umask values can result in this being an issue. For example, with umask 077. If you have this issue, run (as root) `chmod a+r /path/to/policies/managed/*`
