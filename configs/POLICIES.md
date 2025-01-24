@@ -116,7 +116,7 @@ Enable encrypted DNS if the next policy is set
 
 #### `DnsOverHttpsTemplates`
 Value: `"https://freedns.controld.com/p2"`\
-***(REQUIRES_DnsOverHttpsMode-Option-2)***\
+***(REQUIRES_[DnsOverHttpsMode-Option-2](#dnsoverhttpsmode-option-2))***\
 The default DNS used here offers a variety of DNS security features including ECH and content blocking, but any decent DNS resolver could go here instead
 
 #### `DynamicCodeSettings`
