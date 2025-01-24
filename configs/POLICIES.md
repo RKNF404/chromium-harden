@@ -214,10 +214,26 @@ Technicall *optional*, but you should really just use a dedicated app or somethi
 Value: `false`\
 ***(security)***
 
+#### `PrivacySandboxAdMeasurementEnabled`
+Value: `false`\
+***(privacy)***\
+Disable privacy sandbox ad tracking
+
+
+#### `PrivacySandboxAdTopicEnabled`
+Value: `false`\
+***(privacy)***\
+Disable privacy sandbox ad personalization
+
 #### `PrivacySandboxPromptEnabled`
 Value: `false`\
 ***(privacy)***\
-Disables Privacy Sandbox features
+Disables Privacy Sandbox prompt, needed for other privacy sandbox options
+
+#### `PrivacySandboxSiteEnabledAdsEnabled`
+Value: `false`\
+***(privacy)***\
+Disable privacy sandbox ad personalization
 
 #### `PrivateNetworkAccessRestrictionsEnabled`
 Value: `true`\
