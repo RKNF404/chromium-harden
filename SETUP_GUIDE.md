@@ -141,7 +141,7 @@ The structure of Linux policy files is standard `json` with each policy represen
   "PolicyString": "string_value",
   "PolicyBoolean": true,
   "PolicyInteger": 22,
-  "PolicyArray": ["array", "input"]
+  "PolicyArray": ["array", "input"],
   "PolicyDictionary": { "BooleanEntry": false, "StringEntry": "dictionary", "DictionaryEntry": { "TestEntry": 0, }, },
 }
 ```
