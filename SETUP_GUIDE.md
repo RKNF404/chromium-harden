@@ -127,6 +127,8 @@ Native/Interal can mean one of 2 (technically 3) things. One is using the intern
 
 # Policies
 
+See [POLICIES.md](config/POLICIES.md) for what policies can be used and their respctive values
+
 ## Linux
 
 Policies on Linux can vary in location, typically browsers will have their own directories under which to place policy files.
