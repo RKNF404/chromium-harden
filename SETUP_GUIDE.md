@@ -142,7 +142,7 @@ The structure of Linux policy files is standard `json` with each policy represen
   "PolicyBoolean": true,
   "PolicyInteger": 22,
   "PolicyArray": ["array", "input"]
-  "PolicyDictionary": { "BooleanEntry": false, "StringEntry": "dictionary, "DictionaryEntry": { "TestEntry": 0, }, },
+  "PolicyDictionary": { "BooleanEntry": false, "StringEntry": "dictionary", "DictionaryEntry": { "TestEntry": 0, }, },
 }
 ```
 The formatting is very strict and will result in your policies not loading if they are incorrect.
