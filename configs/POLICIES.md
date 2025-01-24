@@ -16,15 +16,15 @@ Restricts to more secure authentication schemes
 
 #### `AutofillAddressEnabled`
 Value: `false`\
-***(security)***
+***(security recommendable)***
 
 #### `AutofillCreditCardEnabled`
 Value: `false`\
-***(security)***
+***(security recommendable)***
 
 #### `BackgroundModeEnabled`
 Value: `false`\
-***(annoyance performance privacy)***
+***(annoyance performance privacy recommendable)***
 
 #### `BlockExternalExtensions`
 Value: `true`\
@@ -32,7 +32,7 @@ Value: `true`\
 
 #### `BlockThirdPartyCookies`
 Value: `true`\
-***(privacy)***
+***(privacy recommendable)***
 
 #### `BrowserLabsEnabled`
 Value: `false`\
@@ -193,7 +193,7 @@ Prevents extensions from communicating with native apps
 
 #### `NetworkPredictionOptions`
 Value: `2`\
-***(privacy -performance)***
+***(privacy -performance recommendable)***
 
 #### `NetworkServiceSandboxEnabled`
 Value: `true`\
@@ -207,7 +207,7 @@ icacls . /grant "*S-1-15-2-2:(OI)(CI)(RX)"
 
 #### `PasswordManagerEnabled`
 Value: `false`\
-***(security)***\
+***(security recommendable)***\
 Technicall *optional*, but you should really just use a dedicated app or something
 
 #### `PaymentMethodQueryEnabled`
@@ -268,7 +268,7 @@ Sacrifice minor security in favor of not sending websites to Google for Safe Bro
 
 #### `SearchSuggestEnabled`
 Value: `false`\
-***(privacy OPTIONAL)***
+***(privacy recommendable)***
 
 #### `SharedClipboardEnabled`
 Value: `false`\
@@ -290,7 +290,7 @@ Disables AI for tab organization
 
 #### `TranslateEnabled`
 Value: `false`\
-***(privacy OPTIONAL)***
+***(privacy recommendable)***
 
 #### `WebRtcIPHandling`
 Value: `"disable_non_proxied_udp"`\
