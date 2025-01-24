@@ -127,7 +127,7 @@ Native/Interal can mean one of 2 (technically 3) things. One is using the intern
 
 # Policies
 
-See [POLICIES.md](/configs/POLICIES.md) for what policies can be used and their respctive values
+See [POLICIES.md](/configs/POLICIES.md) for what policies can be used and their respective values
 
 ## Linux
 
