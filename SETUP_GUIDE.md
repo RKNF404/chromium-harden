@@ -137,7 +137,7 @@ See [POLICIES.md](/configs/POLICIES.md) for what policies can be used and their 
 
 Policies on Linux can vary in location, typically browsers will have their own directories under which to place policy files.
 \
-Policies for vanilla chromium, on most systems, will be located at `/etc/chromium/policies/managed/` for mandatory policies and `/etc/chromium/policies/recommended/` for recommended policies. Most policies must go in the managed directory, but some can go into recommended, these policies can be overridden in the user preferences. Policies that can be recommended will be labeled as such. Google Chrome policies will be located at `/etc/opt/chrome/policies/` with identical folders for managed and recommended policies.
+Policies for vanilla chromium, on most systems, will be located at `/etc/chromium/policies/managed/` for mandatory policies and `/etc/chromium/policies/recommended/` for recommended policies. Most policies must go in the managed directory, but some can go into recommended, these policies can be overridden in the user preferences. Policies that can be recommended will be labeled as such. Google Chrome policies will be located at `/etc/opt/chrome/policies/` with identical folders for mandatory and recommended policies.
 \
 The structure of Linux policy files is standard `json` with each policy represented as a string and it's associated value. See below (this is just an example policy, it will not do anything):
 ```
@@ -156,11 +156,17 @@ The formatting is very strict and will result in your policies not loading if th
 
 ## Windows
 
+Windows policies rely on using the registry. Most browsers, similar to Linux, have different locations for their policies.
+
 ## MacOS
 
 # Persisting Flags
 
 ## Linux
+
+There is no one answer, most Linux distibutions offer a way to persist flags for their build of chromium, and sometimes even offer a way to persist for Google Chrome as well.
+\
+For example, Arch notably offers a [flag persistence method](https://wiki.archlinux.org/title/Chromium#Configuration) for both chromium and Chrome. Fedora also offers a method via `/etc/chromium/chromium.conf`. Most other common distros like Ubuntu, Debian, Gentoo, Nix, etc. also offer methods that are either specific or similar.
 
 ## Windows
 
