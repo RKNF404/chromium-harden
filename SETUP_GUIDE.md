@@ -156,7 +156,7 @@ The formatting is very strict and will result in your policies not loading if th
 
 ## Windows
 
-Windows policies rely on using the registry. Most browsers, similar to Linux, have different locations for their policies.
+Windows policies rely on using the registry. Most browsers, similar to Linux, have different locations for their policies. Google Chrome will use policies from `HKEY_LOCAL_MACHINE/SOFTWARE/Policies/Google/Chrome`.
 
 ## MacOS
 
