@@ -87,6 +87,11 @@ Disables AI for theme creation
 Value: `false`\
 ***(annoyance)***
 
+#### `DefaultJavaScriptOptimizerSetting`
+Value: `1`\
+***(~security)***\
+Locks the V8 security setting so the [JITless](https://github.com/RKNF404/chromium-hardening-guide/blob/main/configs/FLAGS.md#--js-flags--jitless) flag can properly disable JIT for all sites, disabling V8 optimizers acts as a whitelist for WebAssembly
+
 #### `DefaultSensorsSetting`
 Value: `2`\
 ***(security privacy)***
@@ -181,6 +186,11 @@ Disables performing Google searches using webpage screenshots
 Value: `false`\
 ***(privacy)***\
 Disables context menu image searches with Lens
+
+#### `LiveTranslateEnabled`
+Value: `false`\
+***(privacy)***\
+Disables translation in realtime through a Google service
 
 #### `MetricsReportingEnabled`
 Value: `false`\
