@@ -320,7 +320,8 @@ Value: `false`\
 
 #### `WebRtcIPHandling`
 Value: `"disable_non_proxied_udp"`\
-***(privacy OPTIONAL)***
+***(privacy OPTIONAL)***\
+Prevents IP leakage from WebRTC, can cause issues with web calling services like Discord
 
 #### `WebRtcTextLogCollectionAllowed`
 Value: `false`\
