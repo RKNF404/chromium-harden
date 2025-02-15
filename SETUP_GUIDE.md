@@ -70,6 +70,8 @@ Not terrible, but a weak option. It has one central advantage, the content-block
 They also verified their Flathub app. See the [Flatpak](#flatpak-linux) section as to why that is a problem. The issue is not that Brave is packaged as a Flatpak, many chromium browsers are, but they officially endorse it, which is a flagrant disregard for security.
 \
 Also lots of attack surface related to crypto stuff and heavy privacy marketing (despite being rather intrusive by default), and rather ineffective fingerprinting resistance (has gaps making the mitigations bypassable). The company itself is also questionable in its practices, but that is for you to decide.
+\
+To give some credit where it is due, Brave does have some decent changes. For example they proxy [a large number of requests](https://github.com/brave/brave-browser/wiki/Deviations-from-Chromium-(features-we-disable-or-remove)#services-we-proxy-through-brave-servers), for which they have a better pivacy policy on their services than Google. This does have some issues but it is still nice, none-the-less. They do also offer some partitioning improvements, though the amount of which isn't too big since upstream has added a lot of said improvements themselves.
 
 ### Vivaldi
 
