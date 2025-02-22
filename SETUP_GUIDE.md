@@ -123,7 +123,7 @@ This is just preferences, so see [PREFERENCES.md](/configs/PREFERENCES.md). Ever
 
 Content blocking is usually done one of 3 ways, Extensions, Native/Internal, and DNS/Network. Some are blatantly better than others.
 \
-For starters extensions are always bad. Especially MV2 extensions, but uBOL (uBlock Origin Light) in `Basic` mode is pretty good, since it hs no access to sites while still being able to deliver decent content-blocking. Other extensions and uBOL modes risk security and weaken site isolation.
+For starters extensions are always bad. Especially MV2 extensions, but uBOL (uBlock Origin Light) in `Basic` mode is pretty good, since it has no access to sites while still being able to deliver decent content-blocking. Other extensions and uBOL modes risk security and weaken site isolation.
 \
 Native/Interal can mean one of 2 (technically 3) things. One is using the internal subresource filter, this is approx on-par with uBOL in `Basic` mode in terms of filtering capabilities. This is also the most secure since it is already built directly into chromium. The second option is to integrate a third-party filtering engine, this is done by Brave, Vivaldi, Opera, Cromite, and many other browsers. This can vary between a new engine, like [Brave](https://github.com/brave/adblock-rust/), or integrating an extension, like [Cromite](https://github.com/uazo/cromite/blob/master/build/patches/Eyeo-Adblock-for-Cromite.patch). Both have more attack surface but extension integration is much worse.
 \
